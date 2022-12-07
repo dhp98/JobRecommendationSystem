@@ -123,7 +123,7 @@ class skill_keyword_match:
         Output: 
             top_match (DataFrame): top job matches
         '''         
-        num_jobs_return = 5
+        num_jobs_return = 10
         similarity_cosine = []
         j_info = self.jobs_info_df.loc[self.jobs_info_df['location']==location].copy() if len(location)>0 else self.jobs_info_df.copy()
         #if number of rows in the dataframe are less than 5, then we ll update 5 to the number of rows in the dataframe

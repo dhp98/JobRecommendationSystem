@@ -54,4 +54,5 @@ def main():
     # Save matched jobs to a file
     # top_job_matches.to_csv(config.RECOMMENDED_JOBS_FILE+location+'.csv', index=False)
     print('File of recommended jobs saved')
+    top_job_matches.drop_duplicates(subset=['location', 'company', 'title'], inplace=True)
     return top_job_matches
