@@ -13,4 +13,5 @@ def main():
     resume_skills = skill_match.extract_resume_keywords(config.SAMPLE_RESUME_PDF)
     top_job_matches = skill_match.cal_similarity(resume_skills.index, l)
     print('File of recommended jobs saved')
+    top_job_matches.drop_duplicates(subset=['location', 'company', 'title'], inplace=True)
     return top_job_matches
