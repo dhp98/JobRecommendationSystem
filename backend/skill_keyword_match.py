@@ -67,9 +67,8 @@ class skill_keyword_match:
         return cosine
     
     
-    def cal_similarity(self, resume_keywords, location=None):
-        
-        num_jobs_return = 5
+    def cal_similarity(self, resume_keywords, location=None):       
+        num_jobs_return = 10
         similarity_cosine = []
         j_info = self.jobs_info_df.loc[self.jobs_info_df['location']==location].copy() if len(location)>0 else self.jobs_info_df.copy()
         if j_info.shape[0] < num_jobs_return:        
