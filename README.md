@@ -1,6 +1,7 @@
-# CourseProject
+# JobRecommendationSystem
 
-Please fork this repository and paste the github link of your fork on Microsoft CMT. Detailed instructions are on Coursera under Week 1: Course Project Overview/Week 9 Activities.
+The topic of our project is ‘Job Recommendation System’. Being students ourselves, it’s very difficult to find the right jobs based on our resumes. Currently, we end up going through most of the job descriptions and start manually checking if the job description has the skills mentioned that match with the skills that we have. Therefore, we are trying to solve this problem by providing job recommendations based on the resume that is uploaded by the user. This way, the manual process for keyword matching based on skills is not needed anymore. 
+
 
 # Environment Setup:
 
