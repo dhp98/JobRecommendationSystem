@@ -10,22 +10,22 @@ max_results_per_city = 500
 page_record_limit = 50
 num_pages = int(max_results_per_city/page_record_limit)
 
-def get_jobs_info(search_location):
+def get_jobs_info(sl):
     exists = os.path.isfile(config.JOBS_INFO_JSON_FILE)
     if exists:
         with open(config.JOBS_INFO_JSON_FILE, 'r') as fp:
             jobs_info = json.load(fp)            
     else:
-        jobs_info = web_scrape(search_location)
+        jobs_info = web_scrape(sl)
     return jobs_info
         
-def web_scrape(search_location):
+def web_scrape(sl):
     job_links = []
     start = time.time() 
     driver = webdriver.Chrome(config.WEBDRIVER_PATH)
     job_locations = config.JOB_LOCATIONS
-    if (len(search_location) > 0):
-        job_locations = [search_location]
+    if (len(sl) > 0):
+        job_locations = [sl]
         
     for location in job_locations: 
         url = 'https://www.indeed.ca/jobs?q='+ config.JOB_SEARCH_WORDS + '&l=' \
