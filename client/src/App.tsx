@@ -10,7 +10,7 @@ const App = () => {
     <>
     <div className='navbar'>
         <h1 className='title'>Job Recommendation System</h1>
-        <a href='https://github.com'>Github</a>
+        <a href='https://github.com/OjasviAgarwal/JobRecommendationSystem'>Github</a>
     </div>
     <div className='container'>
       <UploadFile setJobsData={setJobsData}/>
