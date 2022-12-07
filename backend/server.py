@@ -1,18 +1,4 @@
 #Flask code to handle the api requests
-
-
-#Todo
-
-'''
-Don't save the file, take the file and read it directly, return back the recommendations
-
-Routes:
-
-/api/jobs - Retrieves resume data and finds matching jobs.
-            Returns: json object having a list of jobs (Max 5)
-
-
-'''
 import os
 from flask import Flask, flash, request, redirect, url_for, session
 from werkzeug.utils import secure_filename
@@ -23,8 +9,6 @@ from job_recommendation import main
 logging.basicConfig(level=logging.INFO)
 
 logger = logging.getLogger('HELLO WORLD')
-
-
 
 UPLOAD_FOLDER = './data/'
 ALLOWED_EXTENSIONS = set(['txt', 'pdf', 'png', 'jpg', 'jpeg', 'gif'])
