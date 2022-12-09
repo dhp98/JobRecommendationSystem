@@ -4,6 +4,11 @@ The topic of our project is ‘Job Recommendation System’. Being students ours
 
 Demo Presentation and Video: https://drive.google.com/file/d/1jN_jI4-0qTC7cz_S_diDNiNH6HTBZ1zq/view?usp=share_link
 
+# Team Members
+Dhyey Pandya
+Ojasvi Agarwal
+Maahi Patel
+Smit Trailokya
 
 # Environment Setup:
 
